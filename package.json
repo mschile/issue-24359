@@ -11,16 +11,21 @@
     "cypress:cache:list": "cypress cache list",
     "list-videos": "ls -l cypress/videos",
     "check-videos": "ok-file 'cypress/videos/*.mp4'",
-    "set-status": "set-status"
+    "set-status": "set-status",
+    "start": "http-server -p 8080"
   },
   "keywords": [],
   "author": "Gleb Bahmutov <gleb@cypress.io>",
   "license": "ISC",
   "devDependencies": {
+    "cypress": "^10.11.0",
     "ok-file": "1.5.2"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/cypress-io/cypress-test-tiny.git"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
   }
 }
